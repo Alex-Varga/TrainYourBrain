@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Train your brain</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a href="/" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+      <nav class="header__nav">
+        <a href="#features" class="header__nav-item">Программа</a>
+        <a href="#packages" class="header__nav-item">Пакеты</a>
+        <a href="#teachers" class="header__nav-item">Учителя</a>
+        <a href="#reviews" class="header__nav-item">Отзывы</a>
+
+        <a href="#applicationForm" class="header__btn-mob btn">Оставить заявку</a>
+      </nav>
+      <a href="#application" class="header__btn btn">Оставить заявку</a>
+
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__left">
+        <h1 class="hero__main-title">Курс подготовки<br>
+          к поступлению в <t>лучшие вузы</t> мира
+        </h1>
+
+        <div class="hero__image">
+          <img src="img/hero.png" alt="hero">
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__form">
+          <form action="" method="post" class="form">
+            <input required type="text" name="name" class="input input__name" placeholder="Ваше имя*">
+            <div class="select input" id="select-1">
+              <button type="button" class="select__toggle" name="package" value="Smart" data-select="toggle" data-index="1">Smart</button>
+              <div class="select__dropdown">
+                <ul class="select__options">
+                  <label for="package-1">
+                    <input type="radio" name="package" id="package-1" value="Basic">
+                    <li class="select__option" data-select="option" data-value="Basic" data-index="0">Basic</li>
+                  </label>
+                  <label for="package-2">
+                    <input checked type="radio" name="package" id="package-2" value="Smart">
+                    <li class="select__option select__option_selected" data-select="option" data-value="Smart" data-index="1">Smart</li>
+                  </label>
+                  <label for="package-3">
+                    <input type="radio" name="package" id="package-3" value="Premium">
+                    <li class="select__option" data-select="option" data-value="Premium" data-index="2">Premium</li>
+                  </label>
+                </ul>
+              </div>
+            </div>
+            <input required type="email" name="email" class="input input__email" placeholder="Email*">
+            <div class="input__tel-wrapper">
+              <p class="tel">+380</p>
+              <input type="tel" name="tel" class="input input__tel" placeholder="(99) 999 99 99">
+            </div>
+            <button class="input__btn btn" type="submit">Оставить заявку</button>
+            <p class="form__policy-agree">Оставляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <div class="features__content">
+      <h2 class="features__main-title">В программу обучения включены <t>три раздела:</t></h2>
+      <div class="features__items">
+        <div class="features__item">
+          <div class="features__item-title">Курс подготовки к международному экзамену по математике.</div>
+          <div class="features__item-subtitle">Охватывает все темы, необходимые для сдачи математического международного экзамена <strong>SAT. 15 занятий</strong> + домашнее задание + разбор.</div>
+          <ul class="features__item-in-course">
+            <div class="title">На курсе мы:</div>
+            <li class="course-item">показываем особенности изложения математики на английском;</li>
+            <li class="course-item">учим выбирать наилучшие стратегии решения;</li>
+            <li class="course-item"> повышаем уровень владения английским языком.</li>
+          </ul>
+        </div>
+
+        <div class="features__item">
+          <div class="features__item-title">Курс подготовки по английскому языку.</div>
+          <div class="features__item-subtitle">Охватывает все темы, необходимые для сдачи языкового раздела международного экзамена <strong>SAT.</strong></div>
+          <ul class="features__item-in-course">
+            <div class="title">На курсе мы:</div>
+            <li class="course-item">показываем стратегии сканирования текстов в Reading Section;</li>
+            <li class="course-item">учим критически анализировать информацию в заданиях для выбора правильного ответа;</li>
+            <li class="course-item">разбираемся с необходимой базой грамматики;</li>
+            <li class="course-item">учимся правильно писать <strong>Essay.</strong></li>
+          </ul>
+        </div>
+
+        <div class="features__item">
+          <div class="features__item-title">Воркшоп по составлению мотивационного письма и CV.</div>
+          <ul class="features__item-in-course">
+            <div class="title">Вы узнаете:</div>
+            <li class="course-item">особенности мотивационных писем для поступления в американские, европейские и британские вузы;</li>
+            <li class="course-item">структуру мотивационного письма;</li>
+            <li class="course-item">интересные нюансы мотивационных писем из собственного опыта эксперта.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="packages__content">
+      <h2 class="packages__main-title">3 пакета участия:</h2>
+
+      <div class="packages__package-items swiper">
+        <div class="swiper-wrapper">
+
+          <div class="packages__package-item swiper-slide">
+            <div class="package-item__title">Basic</div>
+            <div class="package-item__content">
+              <div class="package-item__content-top">
+                <div class="package-item__subtitle">Курс в записи</div>
+                <ul class="package-item__description">
+                  <li>15 занятий по математике на английском</li>
+                  <li>15 занятий по английскому языку</li>
+                  <li>2 воркшопа по составлению мотивационного письма и CV</li>
+                </ul>
+              </div>
+              <label for="package1">
+                <a href="#applicationForm" class="package-item__btn basic">$199</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="packages__package-item swiper-slide">
+            <div class="package-item__title">Smart</div>
+            <div class="package-item__content">
+              <div class="package-item__content-top">
+                <div class="package-item__subtitle">Курс в записи + 3 консультации личные</div>
+                <ul class="package-item__description">
+                  <li>15 занятий по математике на английском</li>
+                  <li>15 занятий по английскому языку</li>
+                  <li>2 воркшопа по составлению мотивационного письма и CV</li>
+                </ul>
+                <div class="package-item__show-more">
+                  <svg width="44" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6086 16.6897L22.988 28.069L34.3673 16.6897" stroke="#259DA8" stroke-width="2"/>
+                    <circle cx="22.988" cy="22" r="21.5" stroke="#259DA8"/>
+                  </svg>
+                </div>
+                <div class="package-item__additional">
+                  <p>+ Final Test с разбором результатов и составлением отчета</p>
+                  <p>+ 3 часа анализа кейса студента, подбора вариантов поступление, оценка шансов поступления.</p>
+                </div>
+              </div>
+              <label for="package2">
+                <a href="#applicationForm" class="package-item__btn smart">$599</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="packages__package-item swiper-slide">
+            <div class="package-item__title">Premium</div>
+            <div class="package-item__content">
+              <div class="package-item__content-top">
+                <div class="package-item__subtitle">Курс в записи + личное сопровождение и подбор программы обучения за границей</div>
+                <ul class="package-item__description">
+                  <li>15 занятий по математике на английском</li>
+                  <li>15 занятий по английскому языку</li>
+                  <li>2 воркшопа по составлению мотивационного письма и CV</li>
+                </ul>
+                <div class="package-item__show-more">
+                  <svg width="44" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6086 16.6897L22.988 28.069L34.3673 16.6897" stroke="#259DA8" stroke-width="2"/>
+                    <circle cx="22.988" cy="22" r="21.5" stroke="#259DA8"/>
+                  </svg>
+                </div>
+                <div class="package-item__additional">
+                  <p>+ Final Test с разбором результатов и составлением отчета</p>
+                  <p>+ 5 часов анализа кейса студента, подбора вариантов учебных заведений, оценка шансов, составление плана и тайминга поступления.</p>
+                  <p>+ 5 индивидуальных консультаций c экспертами по 1 часу на выбор: математика, английский язык, мотивационное письмо.</p>
+                </div>
+              </div>
+              <label for="package3">
+                <a href="#applicationForm" class="package-item__btn premium">$1099</a>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#application" class="packages__btn btn">Начать обучение</a>
+    </div>
+  </div>
+</section>
+
+<section class="teachers" id="teachers">
+  <div class="container">
+    <div class="teachers__content">
+      <h2 class="teachers__main-header"><t>Учителя</t>, с которыми будут обучаться ваши дети</h2>
+
+      <div class="teachers__main-wrapper">
+        <div class="teachers__items swiper">
+          <div class="swiper-wrapper">
+            <div class="teachers__item swiper-slide">
+              <div class="teachers__item-top">
+                <div class="teachers__info">
+                  <div class="title">Людмила<br> Хорсева</div>
+                  <div class="subject">Математика</div>
+                </div>
+                <img src="img/ava1.png" class="teachers__ava">
+              </div>
+              <div class="teachers__item-content">
+                <p><i>PhD in Mathematics</i><br>
+                  Доцент кафедры высшей математики.<br><br>
+                  <i>Co-founder</i> образовательных проектов.<br><br>
+                  <i>Опыт подготовки к международным экзаменам,</i> включающим математический раздел, 10 лет.
+                </p>
+              </div>
+            </div>
+
+            <div class="teachers__item swiper-slide">
+              <div class="teachers__item-top">
+                <div class="teachers__info">
+                  <div class="title">Волчок<br> Денис</div>
+                  <div class="subject">Математика</div>
+                </div>
+                <img src="img/ava2.png" class="teachers__ava">
+              </div>
+              <div class="teachers__item-content">
+                <p><i>PhD in Structural Mechanics</i><br>
+                  Доцент кафедры теоретической, строительной механики и сопротивления материалов.<br><br>
+                  <i>Участник грантов и стипендиальных программ:</i><br>
+                  Alexander von Humboldt Foundation (Institutional academic co-operation programme, grant no. 3.4-Fokoop-UKR/1070297),  "Eugen Ionescu" (AUF)
+                </p>
+              </div>
+            </div>
+
+            <div class="teachers__item swiper-slide">
+              <div class="teachers__item-top">
+                <div class="teachers__info">
+                  <div class="title">Екатерина<br> Гончарова</div>
+                  <div class="subject">Математика</div>
+                </div>
+                <img src="img/ava3.png" class="teachers__ava">
+              </div>
+              <div class="teachers__item-content">
+                <p><i>PhD in Economics</i><br>
+                  Доцент кафедры международной экономики.<br><br>
+                  <i>Co-founder</i> образовательных проектов.<br><br>
+                  <i>Амбассадор</i> Фонда Родини Богдана Гаврилишина.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sertificate">
+  <div class="container">
+    <div class="sertificate__content">
+      <h2 class="sertificate__main-title"><t>Сертификат</t> о прохождении курса дает преимущества при поступлении в <t>зарубежные вузы.</t></h2>
+      <ul class="sertificate__description">
+        <p>Сертификат о прохождение курса дает преимущества:</p>
+        <li>при анализе портфолио абитуриента зарубежными вузами;</li>
+        <li>при приеме на работу;</li>
+        <li>при участии в международных проектах.</li>
+      </ul>
+      <a href="#application" class="sertificate__btn btn">Начать обучение</a>
+      <img src="img/sertificate_bg.png" alt="bg" class="sertificate__image">
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews__content">
+      <h2 class="reviews__main-header">Уже более <t>1000</t> учеников обучаются в <t>Train Your Brain</t></h2>
+
+      <div class="reviews__main-wrapper">
+        <div class="reviews__items swiper">
+          <div class="swiper-wrapper">
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Анна</div>
+                  <div class="age">16 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>Мне очень нравится обучаться в <t>Train Your Brain</t>. Методика обучения намного эффективнее, чем в обычных приватных школах.</p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Катерина</div>
+                  <div class="age">17 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>До прихода в школу <t>Train Your Brain</t>, я знала совсем немного английских слов, о временах я вообще молчу. Мне нравится как проходят уроки в школе. Благодаря данным урокам и very nice teacher у меня увеличился словарный запас, я разобралась с временами и появилось еще больше желания дойти до уровня Advanced.</p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Максим</div>
+                  <div class="age">17 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>Хочу відзначити уважність 
+                  і доброзичливість викладача, який терпляче допомагає засвоювати програму.
+                  За час навчання освіжилися 
+                  і покращилися навички вживання умовних і складнопідрядних речень та узгодження часових форм. Дякую <t>Train Your Brain</t>.</p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Катерина</div>
+                  <div class="age">17 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>До прихода в школу <t>Train Your Brain</t>, я знала совсем немного английских слов, о временах я вообще молчу. Мне нравится как проходят уроки в школе. Благодаря данным урокам и very nice teacher у меня увеличился словарный запас, я разобралась с временами и появилось еще больше желания дойти до уровня Advanced.</p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Анна</div>
+                  <div class="age">16 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>Мне очень нравится обучаться в <t>Train Your Brain</t>. Методика обучения намного эффективнее, чем в обычных приватных школах.</p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__item-top">
+                <img src="img/ava3.png" class="reviews__ava">
+                <div class="reviews__info">
+                  <div class="title">Максим</div>
+                  <div class="age">17 лет</div>
+                </div>
+              </div>
+              <div class="reviews__item-content">
+                <p>Хочу відзначити уважність 
+                  і доброзичливість викладача, який терпляче допомагає засвоювати програму.
+                  За час навчання освіжилися 
+                  і покращилися навички вживання умовних і складнопідрядних речень та узгодження часових форм. Дякую <t>Train Your Brain</t>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="application" id="application">
+  <div class="container">
+    <div class="application__content">
+      <div class="application__left">
+        <h2 class="application__main-title">Мы помогаем подобрать подходящие <t>университеты по всему миру</t>, а также:</h2>
+        <div class="application__feature-items">
+          <div class="feature-item">
+            <div class="feature-item__step">1</div>
+            <div class="feature-item__info">
+              <p class="feature-item__info-title">Подготовиться</p>
+              <p class="feature-item__info-text">к вступительным экзаменам</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__step">2</div>
+            <div class="feature-item__info">
+              <p class="feature-item__info-title">Собрать</p>
+              <p class="feature-item__info-text">все необходимые документы</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__step">3</div>
+            <div class="feature-item__info">
+              <p class="feature-item__info-title">Правильно написать</p>
+              <p class="feature-item__info-text">мотивационное письмо</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__step">4</div>
+            <div class="feature-item__info">
+              <p class="feature-item__info-title">Подать</p>
+              <p class="feature-item__info-text">документы в университет</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="application__right" id="applicationForm">
+        <div class="hero__form">
+          <form action="" method="post" class="form">
+            <input required type="text" name="name" class="input input__name" placeholder="Ваше имя*">
+            <div class="select input" id="select-2">
+              <button type="button" class="select__toggle" name="package" value="Smart" data-select="toggle" data-index="1">Smart</button>
+              <div class="select__dropdown">
+                <ul class="select__options">
+                  <label for="package1">
+                    <input type="radio" name="package" id="package1" value="Basic">
+                    <li class="select__option" data-select="option" data-value="Basic" data-index="0">Basic</li>
+                  </label>
+                  <label for="package2">
+                    <input checked type="radio" name="package" id="package2" value="Smart">
+                    <li class="select__option select__option_selected" data-select="option" data-value="Smart" data-index="1">Smart</li>
+                  </label>
+                  <label for="package3">
+                    <input type="radio" name="package" id="package3" value="Premium">
+                    <li class="select__option" data-select="option" data-value="Premium" data-index="2">Premium</li>
+                  </label>
+                </ul>
+              </div>
+            </div>
+            <input required type="email" name="email" class="input input__email" placeholder="Email*">
+            <div class="input__tel-wrapper">
+              <p class="tel">+380</p>
+              <input type="tel" name="tel" class="input input__tel" placeholder="(99) 999 99 99">
+            </div>
+            <button class="input__btn btn" type="submit">Оставить заявку</button>
+            <p class="form__policy-agree">Оставляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="reserved">© 2022 Все права защищены</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/custom-select.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
